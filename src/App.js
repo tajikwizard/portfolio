@@ -1,18 +1,59 @@
+import React, { useEffect, useState } from "react";
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
+import "./App.css";
+import AboutPage from "./components/AboutPage";
 
-import './App.css';
+import HomePage from "./components/HomePage";
+import ProjectPage from "./components/ProjectPage";
+import SkillPage from "./components/SkillPage";
+import EducationPage from "./components/EducationPage";
 
-function App() {
+export default function App() {
+  const [showBackToTopBtn, setShowBackToTopBtn] = useState(false);
+
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    if (scrolled > 500) {
+      setShowBackToTopBtn(true);
+    } else if (scrolled <= 500) {
+      setShowBackToTopBtn(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisible);
+  }, []);
+
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
   return (
-    <div className="flex flex-col items-center h-screen justify-center">
-      <div className='flex flex-col items-center shadow-2xl p-8 rounded-lg'>
-       <h1 className="text-3xl font-bold underline">
-           Abdusamadzoda Abdulazizi Abdurasul
-        </h1>
-        <br/>
-        <p className='text-gray-500 dark:text-gray-400 text-lg underline'>Portfolio Page Cooming Soon!</p>
-        </div>
-    </div>
+    <>
+      <div className="app-section" id="home">
+        <HomePage />
+      </div>
+      <div className="app-section" id="about">
+        <AboutPage />
+      </div>
+      <div className="app-section" id="skills">
+        <SkillPage />
+      </div>
+      <div className="app-section" id="projects">
+        <ProjectPage />
+      </div>
+      <div className="app-section">
+        <EducationPage />
+      </div>
+
+      {showBackToTopBtn && (
+        <button className="btn-back-to-top" onClick={scrollToTop}>
+          <span> Back to Top</span>
+          <ArrowUpwardIcon />
+        </button>
+      )}
+    </>
   );
 }
-
-export default App;
