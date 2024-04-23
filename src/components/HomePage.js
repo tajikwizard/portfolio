@@ -22,27 +22,27 @@ const HomePage = () => {
       </div>
       <div className="home-page-footer">
         <a
-          href="https://github.com/Vasu7389/react-project-ideas"
+          href="https://github.com/tajikwizard"
           target="_blank"
           rel="noopener noreferrer"
         >
           <GitHubIcon />
         </a>
         <a
-          href="https://www.linkedin.com/in/vasu-awasthi-9a820b137"
+          href="https://www.linkedin.com/in/abdusamadzoda-abdulaziz/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <LinkedInIcon />
         </a>
         <a
-          href="https://www.instagram.com/vasu.awasthi3/"
+          href="https://www.instagram.com/az1.zz/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <InstagramIcon />
         </a>
-        <a href="/">
+        <a href="/https://www.google.com">
           <TwitterIcon />
         </a>
       </div>

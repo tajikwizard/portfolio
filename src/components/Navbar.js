@@ -8,14 +8,9 @@ import "./Navbar.css";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <div className="navbar-container">
+    <div className="navbar-container shadow-md">
       <div className="navbar-left">
-        <Link
-          to="https://github.com/tajikwizard"
-          spy={true}
-          smooth={true}
-          duration={500}
-        >
+        <Link to="/home" spy={true} smooth={true} duration={500}>
           @tajikwizard
         </Link>
       </div>
@@ -76,9 +71,6 @@ const Navbar = () => {
         </Link>
         <Link to="projects" spy={true} smooth={true} duration={500}>
           projects
-        </Link>
-        <Link to="contact" spy={true} smooth={true} duration={500}>
-          contact
         </Link>
       </div>
     </div>
