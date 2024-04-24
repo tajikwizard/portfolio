@@ -15,8 +15,8 @@ const AboutPage = () => {
         <div className="about-right">
           <p>
             I'm Abdusamadzoda Abdulaziz. I am a <span>Software Developer</span>.
-            I have done Post Graduate Diploma in Advanced Computing from{" "}
-            <span>CDAC</span>, Bangalore.
+            I have done Bachelor(Hons) in Business Information Technology from
+            Limkwokwing University <span>LUCT</span>, Malaysia.
           </p>
           <p>
             I specialize in efficient <span>React</span> apps and
