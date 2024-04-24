@@ -12,13 +12,10 @@ const HomePage = () => {
         <Navbar />
       </div>
       <div className="home-page">
-        <div>
-          <span>hey,</span>
-          <p>
-            this is<span> Abdulaziz</span>,
-          </p>
+        <div className="animation flex flex-col justify-center items-center h-screen">
+          <p>Hello 👋</p>
+          <p>I'm Abdulaziz a Junior Software Engineer</p>
         </div>
-        <span>a web developer.</span>
       </div>
       <div className="home-page-footer">
         <a
