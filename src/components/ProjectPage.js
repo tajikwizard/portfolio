@@ -29,7 +29,7 @@ const ProjectPage = () => {
           <p>Personal Web page</p>
           <p>
             <span>2024</span>
-            <a href="">Tap to view</a>
+            <a href="https://tajikwizard-portfolio.netlify.app/">Tap to view</a>
           </p>
         </div>
       </div>
